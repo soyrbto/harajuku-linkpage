@@ -1,0 +1,30 @@
+button {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #191c24;
+  font-family: "Bebas Neue", cursive;
+  font-size: clamp(14px, 1.8vw, 20px);
+  width: clamp(190px, 30vw, 480px);
+  height: clamp(50px, 5vw, 60px);
+  border-radius: 10px;
+  letter-spacing: 0.18em;
+  margin-bottom: 33px;
+
+  /* aqui se coloca la locura para el borde gradiente */
+  border: solid 3px #e05100;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin-left: 3px;
+  margin-top: 2px;
+}
+
+.wrapper:last-child a {
+  margin-left: 0px;
+}

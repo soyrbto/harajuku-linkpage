@@ -1,0 +1,110 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fbd8a0;
+  background-image: url(../../static/images/derecha.svg),
+    url(../../static//images/izquierda.svg),
+    url(../../static/images/cachito.svg);
+  background-position: right top, left top, bottom center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: auto 100%, auto 100%, 10vw;
+}
+
+.wrapper-partners {
+  background-color: red;
+}
+
+.main-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: 25px;
+  width: 102px;
+  height: auto;
+}
+
+h1 {
+  font-family: "Squada One", cursive;
+  font-size: clamp(22px, 4.8vw, 48px);
+  text-align: center;
+  margin: 0 0 28px 0;
+  color: #242728;
+}
+
+span {
+  margin-top: 5px;
+  font-family: "Bungee Shade", cursive;
+  font-size: clamp(18px, 4.4vw, 40px);
+  display: block;
+  color: #242728;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.partners {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+footer {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  text-align: center;
+  font-family: "Bebas neue", cursive;
+  font-size: clamp(18px, 2.5vw, 36px);
+  letter-spacing: 0.12em;
+}
+
+.date {
+  margin-bottom: 9px;
+}

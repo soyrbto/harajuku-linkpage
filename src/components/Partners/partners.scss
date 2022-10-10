@@ -1,0 +1,12 @@
+.Partners {
+  display: flex;
+  flex-wrap: wrap;
+
+  img {
+    width: clamp(60px, 16vw, 120px);
+
+    &:not(:last-child) {
+      margin-right: clamp(9px, 2.4vw, 42px);
+    }
+  }
+}
