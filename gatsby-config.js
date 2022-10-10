@@ -25,18 +25,21 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: "G-8KK1WJZV2T",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Delays sending pageview hits on route update (in milliseconds)
-        pageTransitionDelay: 0,
-        // Defers execution of google analytics script after page load
-        defer: false,
-        // defaults to false
-        enableWebVitalsTracking: true,
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-8KK1WJZV2T", // Google Analytics / GA
+        ],
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: false,
+          // Setting this parameter is also optional
+          respectDNT: true,
+          // Defaults to https://www.googletagmanager.com
+          origin: "https://www.googletagmanager.com",
+        },
       },
     },
   ],
