@@ -4,6 +4,7 @@ import LinkButton from "../components/LinkButton/LinkButton"
 import Partners from "../components/Partners/Partners"
 import Seo from "../components/Seo"
 import logo from "../../static/images/logo.png"
+import { Helmet } from "react-helmet"
 
 function App() {
   let linksList = [
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <div className="App">
+      <Helmet htmlAttributes={{ lang: "en" }} />
       <div className="main-wrapper">
         <img src={logo} alt="Logo de harajuku tranding" className="logo" />
         <h1>
