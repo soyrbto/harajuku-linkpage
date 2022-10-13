@@ -12,6 +12,13 @@ module.exports = {
     siteUrl: `https://www.harajukutranding.com`,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/assets/images/icon.png",
+      },
+    },
+
     "gatsby-plugin-sass",
     {
       resolve: `gatsby-omni-font-loader`,
