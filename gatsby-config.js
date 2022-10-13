@@ -5,7 +5,12 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Harajuku Tranding `,
+    description: `Expo bazar inspirado en la cultura asiatica harajuku`,
+    image: `/images/metaimg.png`,
+    siteUrl: `https://www.harajukutranding.com`,
+  },
   plugins: [
     "gatsby-plugin-sass",
     {

@@ -2,6 +2,7 @@ import React from "react"
 import "../style/global.scss"
 import LinkButton from "../components/LinkButton/LinkButton"
 import Partners from "../components/Partners/Partners"
+import Seo from "../components/Seo"
 import logo from "../../static/images/logo.png"
 
 function App() {
@@ -48,3 +49,5 @@ function App() {
 }
 
 export default App
+
+export const Head = () => <Seo />
