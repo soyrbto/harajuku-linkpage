@@ -6,8 +6,9 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Harajuku Tranding `,
+    title: `Harajuku Tranding Expo bazar`,
     description: `Expo bazar inspirado en la cultura asiatica harajuku`,
+    keywords: `Evento, Valencia, Bazar, Harajuku, Moda, Aesthetic`,
     image: `/images/metaimg.png`,
     siteUrl: `https://www.harajukutranding.com`,
   },

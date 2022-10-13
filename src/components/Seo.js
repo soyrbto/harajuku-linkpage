@@ -5,6 +5,7 @@ const SEO = ({ title, description, pathname, children }) => {
   const {
     title: defaultTitle,
     description: defaultDescription,
+    keywords,
     image,
     siteUrl,
   } = useSiteMetadata()
@@ -14,6 +15,7 @@ const SEO = ({ title, description, pathname, children }) => {
     description: description || defaultDescription,
     image: `${siteUrl}${image}`,
     url: `${siteUrl}${pathname || ``}`,
+    keywords: keywords,
   }
 
   return (
@@ -21,6 +23,8 @@ const SEO = ({ title, description, pathname, children }) => {
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
+      <meta name="image" content={seo.image} />
+      <meta name="keywords" content={seo.keywords} />
       {children}
     </>
   )
