@@ -13,6 +13,7 @@ module.exports = {
     siteUrl: `https://www.harajukutranding.com`,
   },
   plugins: [
+    "gatsby-plugin-robots-txt",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
