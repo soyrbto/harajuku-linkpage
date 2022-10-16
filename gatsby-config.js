@@ -14,6 +14,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-robots-txt",
+    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
